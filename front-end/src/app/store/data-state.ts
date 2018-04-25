@@ -1,4 +1,5 @@
 import { Restaurant } from "../../shared/model/restaurant";
+import { Review } from "../../shared/model/review";
 
 export interface DataState {
     restaurants: Array<Restaurant>;

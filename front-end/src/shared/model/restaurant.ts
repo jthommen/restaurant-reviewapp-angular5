@@ -1,3 +1,5 @@
+import { Review } from "./review";
+
 export interface Restaurant {
     id:number;
     name: string;
@@ -10,5 +12,5 @@ export interface Restaurant {
     };
     cuisine_type: string;
     operating_hours: object;
-    reviews: object[];
+    reviews?: Review[];
 }
