@@ -1,0 +1,18 @@
+<div id="map-container">
+  <agm-map *ngIf="restaurant"
+    [latitude]="restaurant.latlng.lat"
+    [longitude]="restaurant.latlng.lng"
+    [zoom]="zoom"
+    [scrollwheel]="false"
+    [fullscreenControl]="true"
+    [mapTypeControl]="true"
+    role="presentation"
+    aria-hidden="true">
+    <agm-marker 
+      [latitude]="restaurant.latlng.lat"
+      [longitude]="restaurant.latlng.lng"
+      [title]="restaurant.name"
+      [iconUrl]="'assets/icons/map-marker-icon.png'"
+    ></agm-marker>
+  </agm-map>
+</div>

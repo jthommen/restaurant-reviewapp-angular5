@@ -1,0 +1,11 @@
+<section class="filter-options">
+  <h2>Filter Restaurants</h2>
+  <select id="cuisines-select" name="cuisines" (change)="onSelectCuisine($event.target.value)" aria-label="cuisine filter">
+    <option value="All">All Cuisines</option>
+    <option *ngFor="let cuisine of cuisines$ | async" value="{{cuisine}}">{{ cuisine }}</option>
+  </select>
+  <select id="neighborhoods-select" name="neighborhoods" (change)="onSelectNeighborhood($event.target.value)" aria-label="neighborhood filter">
+    <option value="All">All Neighborhoods</option>
+    <option *ngFor="let neighborhood of neighborhoods$ | async" value="{{neighborhood}}">{{ neighborhood }}</option>
+  </select>
+</section>

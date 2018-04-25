@@ -1,0 +1,43 @@
+<nav aria-label="Breadcrumb">
+  <ul id="breadcrumb" *ngIf="restaurant" >
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/details/{{restaurant.id}}" aria-current="page">{{restaurant.name}}</a></li>
+    </ul>
+</nav>
+
+<section id="restaurant-container" *ngIf="restaurant" >
+  <h2 id="restaurant-name">{{restaurant.name}}</h2>
+  <img id="restaurant-img" src="assets/img/{{restaurant.id}}.jpg"  alt="{{restaurant.name}} Interior">
+  <p id="restaurant-cuisine">{{restaurant.cuisine_type}}</p>
+  <p id="restaurant-address">{{restaurant.address}}</p>
+  <table id="restaurant-hours">
+    <tr>
+      <td>Monday</td>
+      <td>{{restaurant.operating_hours.Monday}}</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>{{restaurant.operating_hours.Tuesday}}</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>{{restaurant.operating_hours.Wednesday}}</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>{{restaurant.operating_hours.Thursday}}</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>{{restaurant.operating_hours.Friday}}</td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td>{{restaurant.operating_hours.Saturday}}</td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td>{{restaurant.operating_hours.Sunday}}</td>
+    </tr>
+  </table>
+</section>

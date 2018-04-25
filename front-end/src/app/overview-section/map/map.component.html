@@ -1,0 +1,19 @@
+<agm-map 
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [scrollwheel]="false"
+  [fullscreenControl]="true"
+  [mapTypeControl]="true"
+  role="presentation"
+  aria-hidden="true"
+>
+  <agm-marker 
+    *ngFor="let marker of markerCoordinates$ | async"
+    [latitude]="marker.lat"
+    [longitude]="marker.lng"
+    [title]="marker.name"
+    [iconUrl]="'assets/icons/map-marker-icon.png'"
+    (markerClick)="onMarkerClick(marker.id)"
+  ></agm-marker>
+</agm-map>

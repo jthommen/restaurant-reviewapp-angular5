@@ -1,0 +1,11 @@
+<div id="detail-container">
+    
+    <restaurant-detail [restaurant]="restaurant$ | async"></restaurant-detail>
+    <div id="filler"></div>
+    
+    <map-detail [restaurant]="restaurant$ | async" aria-hidden="true"></map-detail>
+
+    <review-detail [restaurant]="restaurant$ | async"></review-detail>
+    
+</div>
+

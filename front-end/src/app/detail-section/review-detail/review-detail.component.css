@@ -1,0 +1,29 @@
+#reviews-container {
+    color: #666;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#reviews-container h3 {
+    color: #3397db;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: left;
+}
+
+#reviews-list li {
+    background-color: #fff;
+    border: 2px solid #f3f3f3;
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#reviews-list li p {
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.1em;
+}

@@ -1,0 +1,7 @@
+<div id="restaurant-container">
+    <ul id="restaurants-list">
+        <li class="restaurant-item" *ngFor="let restaurant of restaurants$ | async">
+            <restaurant-item [restaurant]="restaurant"></restaurant-item>
+        </li>
+    </ul>
+</div>
